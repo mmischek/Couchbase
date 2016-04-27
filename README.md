@@ -29,3 +29,6 @@ Folgende Eckpunkte sollen enthalten sein:
 - Dokumentenstruktur (JSON, GSON)
 - Erläutern der Indizierung und des Map/Reduce Vorgangs
 - Erstellung und Verwendung von Views
+
+
+find ich gut
