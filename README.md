@@ -1,5 +1,6 @@
 # Couchbase
 Erste Übung für Couchbase
+
 Gruppe: Matthias Mischek | Benedikt Berger
 
 #Installation
@@ -29,6 +30,3 @@ Folgende Eckpunkte sollen enthalten sein:
 - Dokumentenstruktur (JSON, GSON)
 - Erläutern der Indizierung und des Map/Reduce Vorgangs
 - Erstellung und Verwendung von Views
-
-
-find ich gut
