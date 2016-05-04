@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-core-io-1.2.7-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-core-io-1.2.7-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-core-io-1.2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-java-client-2.2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-java-client-2.2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/couchbase-java-client-2.2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/rxjava-1.0.17-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/rxjava-1.0.17-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Benedikt/Desktop/Schule/GitHub/Couchbase Aufgabe/Java API/rxjava-1.0.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
