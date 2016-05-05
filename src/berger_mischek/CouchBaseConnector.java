@@ -19,20 +19,17 @@ public class CouchBaseConnector {
 
 	public void connect(){
 		cluster = CouchbaseCluster.create("192.168.74.135");
-		bucket = cluster.openBucket("beer-sample", 60, TimeUnit.SECONDS);
+		bucket = cluster.openBucket("default", 60, TimeUnit.SECONDS);
 		bucketManager = bucket.bucketManager();
 	}
 	
 	public void create(){
 		try {
-			DesignDocument designDoc = DesignDocument.create("name",
+			DesignDocument designDoc = DesignDocument.create("personlist",
 					Arrays.asList(
-							DefaultView.create("bewery_name",
+							DefaultView.create("be_personlist",
 								"function (doc, meta) { "
-								+ "switch(doc.type) { "
-								+ "case \"brewery\":"
-								+ "emit(meta.id, [doc.name, doc.city]);"
-								+ "}"
+								+ "emit(meta.id, [doc.firstname, doc.lastname]);"
 								+ "}")
 							));
 			bucketManager.insertDesignDocument(designDoc, true);
@@ -42,7 +39,7 @@ public class CouchBaseConnector {
 	}
 
 	public void read(){
-		DesignDocument designDoc = bucketManager.getDesignDocument("name", true);
+		DesignDocument designDoc = bucketManager.getDesignDocument("personlist", true);
 		System.out.println(designDoc.name() + " contains " + designDoc.views().size() + " view(s)\n");
 		List<DesignDocument> designDocs = bucketManager.getDesignDocuments(true);
 		System.out.println("the selected bucket '" + bucket.name() + "' contains of " + designDocs.size() + " the following design document(s):");
@@ -54,7 +51,7 @@ public class CouchBaseConnector {
 	public static void main(String []args){
 		CouchBaseConnector view = new CouchBaseConnector();
 		view.connect();
-//		view.create();
+		view.create();
 		view.read();
 	}
 }
