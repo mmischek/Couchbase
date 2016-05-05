@@ -20,7 +20,7 @@ public class CreateReadUpdateDelete {
 		JsonObject person1 = JsonObject.empty()
 				.put("firstname", "Benedikt")
 				.put("lastname", "Berger")
-				.put("age", 18)
+				.put("age", 16)
 				.put("city", "Wien");
 		
 		// creating json document with person1
@@ -51,7 +51,7 @@ public class CreateReadUpdateDelete {
 			System.out.println("Age: " + bberger.content().getInt("age"));
 			
 			// update bberger with a new age
-			bberger.content().put("Age", 18);
+			bberger.content().put("age", 18);
 			// update bucket
 			JsonDocument updated = bucket.replace(bberger);
 			
